@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard.jsx';
 import Todo from './pages/Todo.jsx';
 import Audio from './pages/Audio.jsx';
-import Calendar from './pages/Comment.jsx';
+import Calendar from './pages/Calendar.jsx';
 import Location from './pages/Location.jsx';
 import MindGames from './pages/MindGames.jsx';
 
