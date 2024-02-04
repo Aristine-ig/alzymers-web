@@ -8,6 +8,7 @@ import { AiOutlineAudio } from "react-icons/ai";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { CgGames } from "react-icons/cg";
+import { RiTeamFill } from "react-icons/ri";
 
 
 
@@ -47,13 +48,19 @@ const Sidebar = ({children}) => {
             path:"/mindgames",
             name:"MindGames",
             icon:<CgGames />
-        }
+        },
+        {
+            path:"/ourteam",
+            name:"OurTeam",
+            icon:<RiTeamFill />
+            
+        },
     ]
     return (
         <div className="container">
-           <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
+           <div style={{width: isOpen ? "250px" : "50px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
+                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Brainies</h1>
                    <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>
