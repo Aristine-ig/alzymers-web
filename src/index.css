@@ -28,114 +28,111 @@ code {
     monospace;
 }
 
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-  .todocontainer {
-    width: 40%;
-    min-width: 45px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 90px;
-    padding: 30px 40px;
-  }
 
-  .calendar {
-    width: 40%;
-    min-width: 45px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 35px;
-    padding: 3px 40px;
+.App {
+  text-align: center;
+}
 
-  }
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
 
-
-#newtask{
-  position: relative;
-  background-color: #ffffff;
-  padding: 30px 20px;
+.TodoWrapper {
+  background: #1A1A40;
+  width: 36%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 60px;
+  margin-top: 5rem;
+  padding: 2rem;
   border-radius: 5px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-}
-#newtask input{
-  width: 70%;
-  width: 70%;
-  height: 45px;
-  font-family: 'Poppins',sans-serif;
-  font-size: 15px;
-  border: 2px solid #d1d3d4;
-  padding: 12px;
-  color: #111111;
-  font-weight: 500;
-  position: relative;
-  border-radius: 5px;
-}
-#newtask input:focus{
-  outline: none;
-  border-color: #8052ec;
+
 }
 
-#newtask button{
-  position: relative;
-  float: right;
-  width: 20%;
-  height: 45px;
-  border-radius: 5px;
-  font-family: 'Poppins',sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: #8052ec;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  outline: none;
-}
-#tasks{
-  background-color: #ffffff;
-  padding: 30px 20px;
-  margin-top: 60px;
-  border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+.TodoForm {
   width: 100%;
-  position: relative;
+  margin-bottom: 1rem;
 }
-.task{
-  background-color: #ffffff;
-  height: 50px;
-  padding: 5px 10px;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #d1d3d4;
-  cursor: pointer;
-}
-.task span{
-  font-family: 'Poppins',sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-}
-.task button{
-  background-color: #8052ec;
-  color: #ffffff;
-  height: 100%;
-  width: 40px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
+
+.todo-input {
   outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
 }
-.completed{
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+.calendar {
+  width: 40%;
+  min-width: 45px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 35px;
+  padding: 3px 40px;
+
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
   text-decoration: line-through;
+  cursor: pointer;
 }
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
