@@ -17,7 +17,6 @@ export default function StaticDatePickerLandscape() {
           <StaticDatePicker
             orientation="portrait"
            
-          
           />
         </LocalizationProvider>
       </div>

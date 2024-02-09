@@ -12,6 +12,7 @@ import OurTeam from './pages/OurTeam.jsx';
 
 const App = () => {
   return (
+    
     <BrowserRouter>
       <Sidebar>
         <Routes>

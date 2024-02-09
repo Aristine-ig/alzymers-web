@@ -5,16 +5,9 @@
 }
 .container{
   display:flex ;
-  width: 100%;
-
-
-  
 }
 
-main{
-  width: 100%;
-  padding: 20px;
-}
+
 
 /* blueviolet */
 .sidebar{
@@ -202,6 +195,8 @@ ul.team-icon li a.dribble{
 	-o-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 }
+
+
 
 
 
