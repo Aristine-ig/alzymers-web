@@ -5,7 +5,7 @@ const Dashboard = () => {
       <h3 className="font-weight-bold w-60 p-5">
         Account settings
       </h3>
-      <div className="card overflow-hidden">
+      <div className="card overflow-hidden mt-20 ">
         <div className="row no-gutters row-bordered row-border-light p-20">
           <div className="col-md-3 pt-0">
             <div className="list-group list-group-flush account-settings-links">
