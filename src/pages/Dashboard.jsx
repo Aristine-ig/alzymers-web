@@ -226,10 +226,6 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      {/* <div className=" mb-3 p-6">
-        <button type="button" className="btn btn-primary">Save changes</button>&nbsp;
-        <button type="button" className="btn btn-default">Cancel</button>
-      </div> */}
     </div>
     
     
