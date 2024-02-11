@@ -396,6 +396,7 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
   min-height: 0;
   min-width: 0;
   word-wrap: break-word;
+  width: 900vh;
 }
 
 .light-style {
@@ -408,14 +409,15 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
 .container-p-y {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100%;
   
 }
 
 
 .font-weight-bold {
-  font-weight: bold;
+  font-weight: bolder;
   font-size:22px;
-	font-weight: 1000
+	font-weight: bolder
   
 }
 
@@ -429,13 +431,18 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
   margin-bottom: 5rem/* 16px */;
 }
 
-.card {
+.profile-card {
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   background-color: #fff;
+  right: 8%;
+  margin-top: 5%;
+  width: 78%;
+  position: relative;
+  height: 100%;
 }
 
-.overflow-hidden {
+.verflow-hidden {
   overflow: hidden;
 }
 
@@ -451,6 +458,8 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
 .row-border-light {
   border-color: rgba(0, 0, 0, 0.125);
 }
+
+
 
 
 .col-md-3 {
@@ -674,6 +683,17 @@ textarea.form-control {
 
 .mt-3 {
   margin-top: 1rem;
+}
+
+.tab-content {
+  position: relative;
+  width: 100%;
+}
+
+.general-box {
+  display: block;
+  width: 80%;
+
 }
 
 

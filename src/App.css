@@ -5,6 +5,7 @@
 }
 .container{
   display:flex ;
+  width: 900vh;
 }
 
 
@@ -75,7 +76,7 @@
 
 
 .section-title {
-	color: whitesmoke;
+	color: black;
 	font-size:24px;
 	font-weight: 700;
 	text-transform:uppercase;

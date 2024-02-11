@@ -29,11 +29,11 @@ const Sidebar = ({children}) => {
             name:"Todo",
             icon:<LuListTodo/>
         },
-        {
-            path:"/audio",
-            name:"Audio",
-            icon:<AiOutlineAudio/>
-        },
+        // {
+        //     path:"/audio",
+        //     name:"Audio",
+        //     icon:<AiOutlineAudio/>
+        // },
         {
             path:"/calendar",
             name:"Calendar",

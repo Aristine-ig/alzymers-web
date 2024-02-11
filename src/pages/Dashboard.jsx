@@ -2,11 +2,11 @@ import React from 'react'
 const Dashboard = () => {
   return (
     <div className="container light-style flex-grow-4 container-p-y">
-      <h3 className="font-weight-bold w-60 p-5">
+      <h3 className="font-weight-bold relative left-20">
         Account settings
       </h3>
-      <div className="card overflow-hidden mt-20 ">
-        <div className="row no-gutters row-bordered row-border-light p-20">
+      <div className="profile-card overflow-hidden mt-36">
+        <div className="row no-gutters row-bordered row-border-light flex">
           <div className="col-md-3 pt-0">
             <div className="list-group list-group-flush account-settings-links">
               <a className="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
@@ -17,9 +17,10 @@ const Dashboard = () => {
               <a className="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notifications</a>
             </div>
           </div>
-          <div className="col-md-9 p-9">
+          
+          <div className="col-md-9 p-3 overflow-hidden general-box">
             <div className="tab-content">
-              <div className="tab-pane fade active show" id="account-general">
+              <div className="tab-pane fade show" id="#account-general">
                 <div className="card-body media align-items-center">
                   <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt className="d-block ui-w-80" />
                   <div className="media-body ml-4">
@@ -35,24 +36,24 @@ const Dashboard = () => {
                 <div className="card-body">
                   <div className="form-group">
                     <label className="form-label">Username</label>
-                    <input type="text" className="form-control mb-1" defaultValue="nmaxwell" />
+                    <input type="text" className="form-control mb-1" placeholder='@xyz' />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Name</label>
-                    <input type="text" className="form-control" defaultValue="Nelle Maxwell" />
+                    <input type="text" className="form-control" placeholder="Your Name" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">E-mail</label>
-                    <input type="text" className="form-control mb-1" defaultValue="nmaxwell@mail.com" />
-                    <div className="alert alert-warning mt-3">
+                    <input type="text" className="form-control mb-1" placeholder="xyz@mail.com" />
+                    {/* <div className="alert alert-warning mt-3">
                       Your email is not confirmed. Please check your inbox.<br />
                       <a href="javascript:void(0)">Resend confirmation</a>
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <label className="form-label">Company</label>
                     <input type="text" className="form-control" defaultValue="Company Ltd." />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="tab-pane fade" id="account-change-password">
@@ -75,34 +76,26 @@ const Dashboard = () => {
                 <div className="card-body pb-2">
                   <div className="form-group">
                     <label className="form-label">Bio</label>
-                    <textarea className="form-control" rows={5} defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus."} />
+                    <textarea className="form-control" rows={5} placeholder='Write Something About Yourself.' />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Birthday</label>
-                    <input type="text" className="form-control" defaultValue="May 3, 1995" />
+                    <input type="text" className="form-control" placeholder='Your Birthdate' />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Country</label>
                     <select className="custom-select">
                       <option>USA</option>
-                      <option selected>Canada</option>
+                      <option selected>India</option>
                       <option>UK</option>
                       <option>Germany</option>
                       <option>France</option>
-                      <option>India</option>
+                      <option>Canada</option>
                     </select>
                   </div>
-                </div>
-                <hr className="border-light m-0" />
-                <div className="card-body pb-2">
-                  <h6 className="mb-4">Contacts</h6>
                   <div className="form-group">
                     <label className="form-label">Phone</label>
-                    <input type="text" className="form-control" defaultValue="+0 (123) 456 7891" />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Website</label>
-                    <input type="text" className="form-control" defaultValue />
+                    <input type="text" className="form-control" placeholder="+(91) 12345 67890" />
                   </div>
                 </div>
               </div>
@@ -110,30 +103,30 @@ const Dashboard = () => {
                 <div className="card-body pb-2">
                   <div className="form-group">
                     <label className="form-label">Twitter</label>
-                    <input type="text" className="form-control" defaultValue="https://twitter.com/user" />
+                    <input type="text" className="form-control" placeholder="https://twitter.com" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Facebook</label>
-                    <input type="text" className="form-control" defaultValue="https://www.facebook.com/user" />
+                    <input type="text" className="form-control" placeholder="https://www.facebook.com" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Google+</label>
-                    <input type="text" className="form-control" defaultValue />
+                    <input type="text" className="form-control" placeholder='https://www.google.com' />
                   </div>
                   <div className="form-group">
                     <label className="form-label">LinkedIn</label>
-                    <input type="text" className="form-control" defaultValue />
+                    <input type="text" className="form-control" placeholder='https://www.LinkedIn.com' />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Instagram</label>
-                    <input type="text" className="form-control" defaultValue="https://www.instagram.com/user" />
+                    <input type="text" className="form-control" placeholder="https://www.instagram.com" />
                   </div>
                 </div>
               </div>
               <div className="tab-pane fade" id="account-connections">
                 <div className="card-body">
                   <button type="button" className="btn btn-twitter">Connect to
-                    <strong>Twitter</strong></button>
+                    <strong> Twitter</strong></button>
                 </div>
                 <hr className="border-light m-0" />
                 <div className="card-body">
@@ -146,17 +139,17 @@ const Dashboard = () => {
                 </div>
                 <hr className="border-light m-0" />
                 <div className="card-body">
-                  <button type="button" className="btn btn-facebook">Connect to
-                    <strong>Facebook</strong></button>
+                  <button type="button" className="btn btn-facebook">Connect to 
+                    <strong> Facebook</strong></button>
                 </div>
                 <hr className="border-light m-0" />
                 <div className="card-body">
-                  <button type="button" className="btn btn-instagram">Connect to
-                    <strong>Instagram</strong></button>
+                  <button type="button" className="btn btn-instagram">Connect to 
+                    <strong> Instagram</strong></button>
                 </div>
               </div>
-              <div className="tab-pane fade" id="account-notifications">
-                <div className="card-body pb-2">
+              {/* <div className="tab-pane fade" id="account-notifications">
+                <div className="card-body pb-2 ">
                   <h6 className="mb-4">Activity</h6>
                   <div className="form-group">
                     <label className="switcher">
@@ -224,15 +217,19 @@ const Dashboard = () => {
                     </label>
                   </div>
                 </div>
+              </div> */}
+              <div className=" mb-3 p-6 left-96 relative">
+                <button type="button" className="btn btn-primary">Save changes</button>&nbsp;
+                <button type="button" className="btn btn-default">Cancel</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" mt-3 p-6">
+      {/* <div className=" mb-3 p-6">
         <button type="button" className="btn btn-primary">Save changes</button>&nbsp;
         <button type="button" className="btn btn-default">Cancel</button>
-      </div>
+      </div> */}
     </div>
     
     
